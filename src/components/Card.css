@@ -1,0 +1,23 @@
+.playingCard {
+    position: absolute;
+    margin-left: 750px;
+    animation: 0.1s slide-right;
+    z-index: 1;
+  }
+
+.shuffle {
+    position: absolute;
+    margin-left: 0;
+    animation: 1s slide-back;
+}
+
+
+@keyframes slide-right{
+    0% {margin-left: 0px}
+    100%{margin-left: 750px}
+}
+
+@keyframes slide-back {
+    0% {margin-left: 750px}
+    100%{margin-left: 0px}
+}

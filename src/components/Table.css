@@ -1,0 +1,25 @@
+.cardPile {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    size: 50em;
+}
+
+#firstBack {
+    z-index: 2;
+}
+#secondBack {
+    position: absolute;
+    z-index: 3;
+}
+
+.shuffleBack {
+    position: relative;
+    animation: 0.75s shuffleBack infinite;
+}
+
+@keyframes shuffleBack {
+    0% {margin-right: 0px}
+    50% {margin-right: 500px}
+    100% {margin-right: 0px; z-index: 0}
+}
